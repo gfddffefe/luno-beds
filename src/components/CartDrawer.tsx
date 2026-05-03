@@ -40,7 +40,7 @@ export default function CartDrawer() {
             items.map((item) => (
               <div key={item.id} className="flex gap-4">
                 <img 
-                  src={item.product?.images?.[0] || 'https://via.placeholder.com/100'} 
+                  src={item.product?.images?.[0] || 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=200&q=80'} 
                   alt={item.product?.name} 
                   className="w-24 h-24 object-cover rounded-xl bg-surface"
                 />

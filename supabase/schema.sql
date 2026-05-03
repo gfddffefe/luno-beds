@@ -58,6 +58,18 @@ ALTER TABLE public.orders ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.order_items ENABLE ROW LEVEL SECURITY;
 
 -- Policies
+DROP POLICY IF EXISTS "Public profiles are viewable by everyone." ON public.profiles;
+DROP POLICY IF EXISTS "Users can insert their own profile." ON public.profiles;
+DROP POLICY IF EXISTS "Users can update own profile." ON public.profiles;
+DROP POLICY IF EXISTS "Products are viewable by everyone." ON public.products;
+DROP POLICY IF EXISTS "Users can view their own cart items." ON public.cart_items;
+DROP POLICY IF EXISTS "Users can insert their own cart items." ON public.cart_items;
+DROP POLICY IF EXISTS "Users can update their own cart items." ON public.cart_items;
+DROP POLICY IF EXISTS "Users can delete their own cart items." ON public.cart_items;
+DROP POLICY IF EXISTS "Users can view their own orders." ON public.orders;
+DROP POLICY IF EXISTS "Users can create their own orders." ON public.orders;
+DROP POLICY IF EXISTS "Users can view their own order items." ON public.order_items;
+DROP POLICY IF EXISTS "Users can create their own order items." ON public.order_items;
 
 -- Profiles
 CREATE POLICY "Public profiles are viewable by everyone."

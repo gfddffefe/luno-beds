@@ -72,21 +72,21 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Link to="/catalog?category=beds" className="group relative h-[400px] overflow-hidden rounded-2xl block">
-              <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Beds" />
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Beds" />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
               <div className="absolute inset-x-0 bottom-0 p-8">
                 <h3 className="text-white text-3xl font-light">Beds</h3>
               </div>
             </Link>
             <Link to="/catalog?category=mattresses" className="group relative h-[400px] overflow-hidden rounded-2xl block">
-              <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Mattresses" />
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Mattresses" />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
               <div className="absolute inset-x-0 bottom-0 p-8">
                 <h3 className="text-white text-3xl font-light">Mattresses</h3>
               </div>
             </Link>
             <Link to="/catalog?category=pillows" className="group relative h-[400px] overflow-hidden rounded-2xl block">
-              <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Pillows" />
+              <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=800&q=80" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Pillows" />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
               <div className="absolute inset-x-0 bottom-0 p-8">
                 <h3 className="text-white text-3xl font-light">Pillows</h3>

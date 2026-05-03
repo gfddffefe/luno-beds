@@ -32,7 +32,11 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
-          <div className="w-full h-full bg-border flex items-center justify-center text-text-secondary text-sm">No Image</div>
+          <img 
+            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80" 
+            alt={product.name} 
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-50 grayscale"
+          />
         )}
       </div>
       <div className="flex flex-col flex-grow">

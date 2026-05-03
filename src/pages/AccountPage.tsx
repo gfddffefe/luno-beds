@@ -53,7 +53,11 @@ export default function AccountPage() {
           </div>
           <div>
             <label className="block text-sm font-medium mb-1">Full Name</label>
-            <Input name="full_name" defaultValue={profile?.full_name || ''} />
+            <Input 
+              name="full_name" 
+              value={profile?.full_name || ''} 
+              onChange={(e) => setProfile(prev => prev ? { ...prev, full_name: e.target.value } : { id: user?.id || '', email: user?.email || '', full_name: e.target.value, avatar_url: null, created_at: '' })}
+            />
           </div>
           <div className="pt-4 flex justify-between items-center">
             <Button type="submit" disabled={loading}>{loading ? 'Saving...' : 'Save changes'}</Button>
